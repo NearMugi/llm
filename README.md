@@ -18,5 +18,5 @@ docker rmi xxx
 
 ## マウントしているフォルダ
 
-./work <-> /root/work
+./mount <-> /root/mount
 
