@@ -78,3 +78,11 @@ Login successful
 >>>
 ```
 
+## llm.cpp で「ござる」口調にしてみる
+
+引用元ファイル  
+[bbz662bbz/databricks-dolly-15k-ja-gozaru](https://huggingface.co/datasets/bbz662bbz/databricks-dolly-15k-ja-gozaru)  
+参考URL  
+[llama.cppで語尾を”ござる”に変えるloraを作る](https://zenn.dev/michy/articles/a79d4a4a501bf9)  
+
+
