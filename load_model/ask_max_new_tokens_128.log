@@ -1,0 +1,24 @@
+++++++++++
+load tokenizer
+TIME : 0.1 s
+++++++++++
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [01:09<01:09, 69.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [02:20<00:00, 70.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [02:20<00:00, 70.35s/it]
+TIME : 144.1 s
+++++++++++
+prompt
+TIME : 144.1 s
+++++++++++
+tokenizer.encode
+TIME : 144.2 s
+++++++++++
+model.generate
+TIME : 4151.7 s
+++++++++++
+tokenizer.decode
+承知しました。エラトステネスの篩は、与えられた入力データを2つのグループに分類する問題を解決するための機械学習のアルゴリズムです。以下のサンプルコードは、エラトステネスの篩をPythonで実装したものです。
+```python
+import numpy as np
+
+def
+TOTAL TIME : 4151.7 s

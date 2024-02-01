@@ -1,0 +1,20 @@
+++++++++++
+load tokenizer
+TIME : 0.1 s
+++++++++++
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:44<00:44, 44.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:49<00:00, 56.37s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:49<00:00, 54.58s/it]
+TIME : 111.6 s
+++++++++++
+prompt
+TIME : 111.6 s
+++++++++++
+tokenizer.encode
+TIME : 111.7 s
+++++++++++
+model.generate
+TIME : 1619.9 s
+++++++++++
+tokenizer.decode
+承知しました。エラトステネスの篩は、与えられた入力データを2つのグループに分類する問題を解決するための
+TOTAL TIME : 1619.9 s
