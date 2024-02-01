@@ -3,6 +3,9 @@
 ## Docker操作
 
 ```bash
+
+cd env_setup
+
 # コンテナの立ち上げ
 docker-compose up -d
 

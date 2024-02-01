@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   app:
+    image: llm-env
     build: .
     container_name: llm-app
     tty: true
     stdin_open: true
     volumes:
-      - ./mount:/root/mount
+      - ../mount:/root/mount
