@@ -1,0 +1,210 @@
+llama_model_loader: loaded meta data with 21 key-value pairs and 291 tensors from /root/mount/models/ELYZA-japanese-Llama-2-7b-fast-instruct-q2_K.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = ELYZA-japanese-Llama-2-7b-fast-instruct
+llama_model_loader: - kv   2:      general.source.huggingface.repository str              = elyza/ELYZA-japanese-Llama-2-7b-fast-...
+llama_model_loader: - kv   3:                   llama.tensor_data_layout str              = Meta AI original pth
+llama_model_loader: - kv   4:                       llama.context_length u32              = 4096
+llama_model_loader: - kv   5:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   6:                          llama.block_count u32              = 32
+llama_model_loader: - kv   7:                  llama.feed_forward_length u32              = 11008
+llama_model_loader: - kv   8:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   9:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv  10:              llama.attention.head_count_kv u32              = 32
+llama_model_loader: - kv  11:     llama.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,45043]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,45043]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,45043]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  18:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  19:               general.quantization_version u32              = 2
+llama_model_loader: - kv  20:                          general.file_type u32              = 10
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q2_K:   65 tensors
+llama_model_loader: - type q3_K:  160 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: mismatch in special tokens definition ( 304/45043 vs 264/45043 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = SPM
+llm_load_print_meta: n_vocab          = 45043
+llm_load_print_meta: n_merges         = 0
+llm_load_print_meta: n_ctx_train      = 4096
+llm_load_print_meta: n_embd           = 4096
+llm_load_print_meta: n_head           = 32
+llm_load_print_meta: n_head_kv        = 32
+llm_load_print_meta: n_layer          = 32
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 1
+llm_load_print_meta: n_embd_k_gqa     = 4096
+llm_load_print_meta: n_embd_v_gqa     = 4096
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-06
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 11008
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 10000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 4096
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 7B
+llm_load_print_meta: model ftype      = Q2_K - Medium
+llm_load_print_meta: model params     = 6.85 B
+llm_load_print_meta: model size       = 2.69 GiB (3.37 BPW) 
+llm_load_print_meta: general.name     = ELYZA-japanese-Llama-2-7b-fast-instruct
+llm_load_print_meta: BOS token        = 1 '<s>'
+llm_load_print_meta: EOS token        = 2 '</s>'
+llm_load_print_meta: UNK token        = 0 '<unk>'
+llm_load_print_meta: LF token         = 13 '<0x0A>'
+llm_load_tensors: ggml ctx size =    0.11 MiB
+llm_load_tensors: offloading 0 repeating layers to GPU
+llm_load_tensors: offloaded 0/33 layers to GPU
+llm_load_tensors:        CPU buffer size =  2752.83 MiB
+..............................................................................................
+llama_new_context_with_model: n_ctx      = 512
+llama_new_context_with_model: freq_base  = 10000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:        CPU KV buffer size =   256.00 MiB
+llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+llama_new_context_with_model:        CPU input buffer size   =     9.01 MiB
+llama_new_context_with_model:        CPU compute buffer size =   105.57 MiB
+llama_new_context_with_model: graph splits (measure): 1
+main: seed: 1706918041
+main: model base = '/root/mount/models/ELYZA-japanese-Llama-2-7b-fast-instruct-q2_K.gguf'
+main: init model
+print_params: n_vocab               : 45043
+print_params: n_ctx                 : 32
+print_params: n_embd                : 4096
+print_params: n_ff                  : 11008
+print_params: n_head                : 32
+print_params: n_head_kv             : 32
+print_params: n_layer               : 32
+print_params: norm_rms_eps          : 0.000001
+print_params: rope_freq_base        : 10000.000000
+print_params: rope_freq_scale       : 1.000000
+print_lora_params: n_rank_attention_norm : 1
+print_lora_params: n_rank_wq             : 4
+print_lora_params: n_rank_wk             : 4
+print_lora_params: n_rank_wv             : 4
+print_lora_params: n_rank_wo             : 4
+print_lora_params: n_rank_ffn_norm       : 1
+print_lora_params: n_rank_w1             : 4
+print_lora_params: n_rank_w2             : 4
+print_lora_params: n_rank_w3             : 4
+print_lora_params: n_rank_tok_embeddings : 4
+print_lora_params: n_rank_norm           : 1
+print_lora_params: n_rank_output         : 4
+main: total train_iterations 0
+main: seen train_samples     0
+main: seen train_tokens      0
+main: completed train_epochs 0
+main: lora_size = 85698592 bytes (81.7 MB)
+main: opt_size  = 127845136 bytes (121.9 MB)
+main: opt iter 0
+main: input_size = 28828192 bytes (27.5 MB)
+main: compute_size = 3778432166 bytes (3603.4 MB)
+main: evaluation order = RIGHT_TO_LEFT
+main: tokenize training data from /root/mount/gozaru/input.txt
+main: sample-start: [INST]
+main: include-sample-start: false
+tokenize_file: warning: found 357 samples (max length 47) that exceed context length of 32. samples will be cut off.
+tokenize_file: warning: found 349 samples (min length 19) that are shorter than context length of 32.
+tokenize_file: total number of samples: 750
+main: number of training tokens: 24148
+main: number of unique tokens: 2122
+main: train data seems to have changed. restarting shuffled epoch.
+main: begin training
+main: work_size = 1081408 bytes (1.0 MB)
+train_opt_callback: iter=     0 sample=1/750 sched=0.000000 loss=0.000000 |->
+train_opt_callback: iter=     1 sample=6/750 sched=0.010000 loss=5.281188 dt=00:08:17 eta=08:09:25 |->
+train_opt_callback: iter=     2 sample=11/750 sched=0.020000 loss=5.430097 dt=00:08:20 eta=08:03:30 |>
+train_opt_callback: iter=     3 sample=16/750 sched=0.030000 loss=5.206881 dt=00:07:00 eta=06:39:20 |-->
+train_opt_callback: iter=     4 sample=21/750 sched=0.040000 loss=5.895381 dt=00:05:45 eta=05:22:54 |>
+train_opt_callback: iter=     5 sample=26/750 sched=0.050000 loss=4.831591 dt=00:05:22 eta=04:55:51 |----->
+train_opt_callback: iter=     6 sample=31/750 sched=0.060000 loss=5.521856 dt=00:05:46 eta=05:11:36 |>
+train_opt_callback: iter=     7 sample=36/750 sched=0.070000 loss=5.741718 dt=00:06:02 eta=05:20:17 |>
+train_opt_callback: iter=     8 sample=41/750 sched=0.080000 loss=6.655893 dt=00:06:04 eta=05:15:42 |>
+train_opt_callback: iter=     9 sample=46/750 sched=0.090000 loss=4.955330 dt=00:05:55 eta=05:01:49 |---->
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-10.gguf
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-LATEST.gguf
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-10.bin
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-LATEST.bin
+train_opt_callback: iter=    10 sample=51/750 sched=0.100000 loss=6.522160 dt=00:06:07 eta=05:06:08 |>
+train_opt_callback: iter=    11 sample=56/750 sched=0.110000 loss=4.736726 dt=00:06:39 eta=05:26:31 |------>
+train_opt_callback: iter=    12 sample=61/750 sched=0.120000 loss=4.774530 dt=00:06:58 eta=05:35:09 |------>
+train_opt_callback: iter=    13 sample=66/750 sched=0.130000 loss=4.301008 dt=00:06:49 eta=05:20:39 |----------->
+train_opt_callback: iter=    14 sample=71/750 sched=0.140000 loss=5.048156 dt=00:07:05 eta=05:26:26 |--->
+train_opt_callback: iter=    15 sample=76/750 sched=0.150000 loss=4.219139 dt=00:06:06 eta=04:34:58 |------------>
+train_opt_callback: iter=    16 sample=81/750 sched=0.160000 loss=4.787771 dt=00:06:15 eta=04:35:37 |------>
+train_opt_callback: iter=    17 sample=86/750 sched=0.170000 loss=4.124053 dt=00:06:28 eta=04:38:30 |------------->
+train_opt_callback: iter=    18 sample=91/750 sched=0.180000 loss=4.475264 dt=00:06:16 eta=04:23:50 |--------->
+train_opt_callback: iter=    19 sample=96/750 sched=0.190000 loss=3.284355 dt=00:06:21 eta=04:20:38 |--------------------->
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-20.gguf
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-LATEST.gguf
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-20.bin
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-LATEST.bin
+train_opt_callback: iter=    20 sample=101/750 sched=0.200000 loss=3.393650 dt=00:06:18 eta=04:12:17 |-------------------->
+train_opt_callback: iter=    21 sample=106/750 sched=0.210000 loss=3.534670 dt=00:06:17 eta=04:05:10 |------------------>
+train_opt_callback: iter=    22 sample=111/750 sched=0.220000 loss=3.153068 dt=00:05:48 eta=03:40:29 |---------------------->
+train_opt_callback: iter=    23 sample=116/750 sched=0.230000 loss=2.930542 dt=00:05:37 eta=03:28:25 |------------------------->
+train_opt_callback: iter=    24 sample=121/750 sched=0.240000 loss=3.126334 dt=00:05:34 eta=03:20:30 |----------------------->
+train_opt_callback: iter=    25 sample=126/750 sched=0.250000 loss=2.587036 dt=00:05:32 eta=03:13:42 |---------------------------->
+train_opt_callback: iter=    26 sample=131/750 sched=0.260000 loss=2.718852 dt=00:05:36 eta=03:10:53 |--------------------------->
+train_opt_callback: iter=    27 sample=136/750 sched=0.270000 loss=2.710433 dt=00:05:32 eta=03:02:42 |--------------------------->
+train_opt_callback: iter=    28 sample=141/750 sched=0.280000 loss=3.053199 dt=00:05:28 eta=02:54:56 |----------------------->
+train_opt_callback: iter=    29 sample=146/750 sched=0.290000 loss=3.045774 dt=00:05:30 eta=02:50:34 |----------------------->
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-30.gguf
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-LATEST.gguf
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-30.bin
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-LATEST.bin
+train_opt_callback: iter=    30 sample=151/750 sched=0.300000 loss=2.472609 dt=00:05:29 eta=02:44:57 |----------------------------->
+train_opt_callback: iter=    31 sample=156/750 sched=0.310000 loss=2.160309 dt=00:05:21 eta=02:35:28 |-------------------------------->
+train_opt_callback: iter=    32 sample=161/750 sched=0.320000 loss=2.357320 dt=00:05:07 eta=02:23:37 |------------------------------>
+train_opt_callback: iter=    33 sample=166/750 sched=0.330000 loss=2.108577 dt=00:04:59 eta=02:14:59 |--------------------------------->
+train_opt_callback: iter=    34 sample=171/750 sched=0.340000 loss=2.472430 dt=00:04:56 eta=02:08:18 |----------------------------->
+train_opt_callback: iter=    35 sample=176/750 sched=0.350000 loss=2.154933 dt=00:04:54 eta=02:02:49 |-------------------------------->
+train_opt_callback: iter=    36 sample=181/750 sched=0.360000 loss=2.124558 dt=00:04:58 eta=01:59:22 |--------------------------------->
+train_opt_callback: iter=    37 sample=186/750 sched=0.370000 loss=1.850535 dt=00:04:53 eta=01:52:29 |----------------------------------->
+train_opt_callback: iter=    38 sample=191/750 sched=0.380000 loss=2.044320 dt=00:04:46 eta=01:45:04 |--------------------------------->
+train_opt_callback: iter=    39 sample=196/750 sched=0.390000 loss=1.784399 dt=00:04:50 eta=01:41:39 |------------------------------------>
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-40.gguf
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-LATEST.gguf
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-40.bin
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-LATEST.bin
+train_opt_callback: iter=    40 sample=201/750 sched=0.400000 loss=2.204036 dt=00:04:54 eta=01:38:02 |-------------------------------->
+train_opt_callback: iter=    41 sample=206/750 sched=0.410000 loss=1.819010 dt=00:04:59 eta=01:34:56 |------------------------------------>
+train_opt_callback: iter=    42 sample=211/750 sched=0.420000 loss=2.265065 dt=00:05:04 eta=01:31:17 |------------------------------->
+train_opt_callback: iter=    43 sample=216/750 sched=0.430000 loss=2.309363 dt=00:05:04 eta=01:26:14 |------------------------------->
+train_opt_callback: iter=    44 sample=221/750 sched=0.440000 loss=2.071719 dt=00:05:06 eta=01:21:40 |--------------------------------->
+train_opt_callback: iter=    45 sample=226/750 sched=0.450000 loss=2.206953 dt=00:05:13 eta=01:18:20 |-------------------------------->
+train_opt_callback: iter=    46 sample=231/750 sched=0.460000 loss=1.528394 dt=00:05:13 eta=01:13:06 |--------------------------------------->
+train_opt_callback: iter=    47 sample=236/750 sched=0.470000 loss=2.066093 dt=00:05:13 eta=01:07:51 |--------------------------------->
+train_opt_callback: iter=    48 sample=241/750 sched=0.480000 loss=2.681672 dt=00:05:16 eta=01:03:14 |--------------------------->
+train_opt_callback: iter=    49 sample=246/750 sched=0.490000 loss=2.641916 dt=00:05:12 eta=00:57:16 |--------------------------->
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-50.gguf
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-LATEST.gguf
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-50.bin
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-LATEST.bin
+train_opt_callback: iter=    50 sample=251/750 sched=0.500000 loss=2.087629 dt=00:05:11 eta=00:51:58 |--------------------------------->
+train_opt_callback: iter=    51 sample=256/750 sched=0.510000 loss=2.128101 dt=00:05:14 eta=00:47:09 |--------------------------------->
+train_opt_callback: iter=    52 sample=261/750 sched=0.520000 loss=2.132514 dt=00:05:14 eta=00:41:52 |-------------------------------->
+train_opt_callback: iter=    53 sample=266/750 sched=0.530000 loss=2.236437 dt=00:05:13 eta=00:36:34 |------------------------------->
+train_opt_callback: iter=    54 sample=271/750 sched=0.540000 loss=1.764762 dt=00:05:15 eta=00:31:33 |------------------------------------>
+train_opt_callback: iter=    55 sample=276/750 sched=0.550000 loss=2.210973 dt=00:05:13 eta=00:26:05 |-------------------------------->
+train_opt_callback: iter=    56 sample=281/750 sched=0.560000 loss=1.961332 dt=00:05:12 eta=00:20:50 |---------------------------------->
+train_opt_callback: iter=    57 sample=286/750 sched=0.570000 loss=2.158877 dt=00:05:14 eta=00:15:43 |-------------------------------->
+train_opt_callback: iter=    58 sample=291/750 sched=0.580000 loss=2.357456 dt=00:05:14 eta=00:10:28 |------------------------------>
+train_opt_callback: iter=    59 sample=296/750 sched=0.590000 loss=2.410995 dt=00:05:15 eta=00:05:15 |------------------------------>
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-60.gguf
+save_checkpoint_lora_file: saving to /root/mount/gozaru/output/lora-LATEST.gguf
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-60.bin
+save_as_llama_lora: saving to /root/mount/gozaru/loraout/lora-LATEST.bin
+train_opt_callback: iter=    60 sample=301/750 sched=0.600000 loss=1.558481 dt=00:05:15 eta=0.0ms |-------------------------------------->
+main: total training time: 05:44:20

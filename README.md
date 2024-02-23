@@ -78,11 +78,32 @@ Login successful
 >>>
 ```
 
-## llm.cpp で「ござる」口調にしてみる
+## llama.cpp で「ござる」口調にしてみる
 
 引用元ファイル  
 [bbz662bbz/databricks-dolly-15k-ja-gozaru](https://huggingface.co/datasets/bbz662bbz/databricks-dolly-15k-ja-gozaru)  
 参考URL  
 [llama.cppで語尾を”ござる”に変えるloraを作る](https://zenn.dev/michy/articles/a79d4a4a501bf9)  
 
+llama.cpp のFinetuneの設定  
+https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune  
+
+CPUしか使えないので非力。。。ただ時間はかかるもののチューニングは動いている。
+
+```bash
+./main -m models/ELYZA-japanese-Llama-2-7b-fast-instruct-q2_K.gguf --lora {loraPath} -n 256 -p '[INST] <<SYS>>あなたは誠実で優秀な日本人のアシスタントです。<</SYS>>日本の首都は? [/INST]'
+``` 
+
+## Google Colab を使って学習させる
+
+チューニングに時間がかかるので利用を検討。
+
+[Google Colab で Llama-2-7B のQLoRA ファインチューニングを試す](https://note.com/npaka/n/na7c631175111)
+[Google Colab で LLaMA-Factory を試す](https://note.com/npaka/n/ne72fb4de6a2f)
+
+
+
+## 推論するときにGPUを有効にする
+
+[Llama.cpp + cuBLAS による Llama 2 の高速実行を試す](https://note.com/npaka/n/n9eda56d3a463)
 
